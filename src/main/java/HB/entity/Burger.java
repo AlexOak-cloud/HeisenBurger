@@ -1,24 +1,24 @@
 package HB.entity;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
-public class Dish {
+@Entity
+@Table(name = "burger")
+public class Burger{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id", nullable = false, unique = true)
     private int id;
-    @Column(name = "name")
+    @Column(name = "name", nullable = false, unique = true)
     private String name;
-    @Column(name = " price")
+    @Column(name = "price", nullable = false)
     private int price;
 }

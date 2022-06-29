@@ -1,32 +1,32 @@
 package HB.service;
 
 
-import HB.entity.Pizza;
-import HB.repository.PizzaRepository;
+import HB.entity.Burger;
+import HB.repository.BurgerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class PizzaService {
+public class BurgerService {
 
     @Autowired
-    private PizzaRepository pizzaRepository;
+    private BurgerRepository pizzaRepository;
 
-    public void save(Pizza pizza){
+    public void save(Burger pizza){
         pizzaRepository.save(pizza);
     }
 
-    public List<Pizza> getAll(){
+    public List<Burger> getAll(){
         return pizzaRepository.findAll();
     }
 
-    public Pizza findById(int id){
+    public Burger findById(int id){
         return pizzaRepository.findById(id).get();
     }
 
-    public void delete(Pizza pizza){
+    public void delete(Burger pizza){
         pizzaRepository.delete(pizza);
     }
 
