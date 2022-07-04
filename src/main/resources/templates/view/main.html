@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>HiesenBurger</h1>
+<br>
+<br>
+<br>
+<tr  th:each="product : ${products}">
+    <td th:text="${product.getId}">error id</td>
+    <td th:text="${product.getName}">error name</td>
+    <td th:text="${product.getPrice}">error price</td>
+    </br>
+</tr>
+
+
+
+</body>
+</html>

@@ -1,11 +1,11 @@
 package HB.repository;
 
 
-import HB.entity.Burger;
+import HB.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BurgerRepository extends JpaRepository<Burger, Integer> {
+public interface ProductRepository extends JpaRepository<Product, Integer> {
 
 }
