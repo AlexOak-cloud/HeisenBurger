@@ -21,4 +21,7 @@ public class Product{
     private String name;
     @Column(name = "price", nullable = false)
     private int price;
+    @Column(name="img_name", unique = true, nullable = false)
+    private String imgName;
+
 }

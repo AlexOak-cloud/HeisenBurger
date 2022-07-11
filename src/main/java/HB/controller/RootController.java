@@ -13,7 +13,7 @@ public class RootController {
     private ProductService productService;
 
     @GetMapping("/")
-    public ModelAndView main(){
+    public ModelAndView main() {
         ModelAndView mav = new ModelAndView("/view/main.html");
         mav.addObject("products", productService.getAll());
         return mav;
@@ -21,3 +21,5 @@ public class RootController {
 
 
 }
+
+
